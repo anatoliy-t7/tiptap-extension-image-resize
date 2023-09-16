@@ -1,45 +1,45 @@
 {
-  "name": "tiptap-extension-image-resize",
-  "author": "coolswitch",
-  "description": "Image extension for tiptap, support resize or rotation",
-  "version": "0.1.2",
-  "homepage": "https://github.com/anatoliydarma/tiptap-extension-image-resize#readme",
-  "keywords": [
-    "tiptap",
-    "tiptap extension",
-    "tiptap extension resize",
-    "tiptap extension rotate",
-    "tiptap extension img",
-    "tiptap extension image",
-    "tiptap image resize",
-    "tiptap image rotate"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=16"
-  },
-  "main": "src/index.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "dependencies": {
-    "@tiptap/core": "^2.1.10",
-    "@tiptap/vue-3": "^2.1.10"
-  },
-  "devDependencies": {
-    "husky": "^7.0.4",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.4.0",
-    "typescript": "^5.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/coolswitch/tiptap-extension-image-freely/issues"
-  },
-  "repository": "git+https://github.com/coolswitch/tiptap-extension-image-freely.git"
+	"name": "tiptap-extension-image-resize",
+	"author": "coolswitch",
+	"description": "Image extension for tiptap, support resize or rotation",
+	"version": "0.1.3",
+	"homepage": "https://github.com/anatoliydarma/tiptap-extension-image-resize#readme",
+	"keywords": [
+		"tiptap",
+		"tiptap extension",
+		"tiptap extension resize",
+		"tiptap extension rotate",
+		"tiptap extension img",
+		"tiptap extension image",
+		"tiptap image resize",
+		"tiptap image rotate"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "src/index.ts",
+	"files": [
+		"dist",
+		"src"
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "tsdx lint"
+		}
+	},
+	"dependencies": {
+		"@tiptap/core": "^2.1.10",
+		"@tiptap/vue-3": "^2.1.10"
+	},
+	"devDependencies": {
+		"husky": "^7.0.4",
+		"tsdx": "^0.14.1",
+		"tslib": "^2.4.0",
+		"typescript": "^5.0.0"
+	},
+	"bugs": {
+		"url": "https://github.com/coolswitch/tiptap-extension-image-freely/issues"
+	},
+	"repository": "git+https://github.com/coolswitch/tiptap-extension-image-freely.git"
 }

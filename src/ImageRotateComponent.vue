@@ -21,7 +21,6 @@
 
 <script setup>
 	import { inject, ref, computed, watch, onMounted } from 'vue';
-	import { throttle } from '@/utils/tools';
 
 	const tiptapProps = inject('tiptapProps');
 	const props = defineProps({
@@ -34,6 +33,31 @@
 	// const warpW = ref('fit-content')
 	// const warpH = ref('fit-content')
 	const needSwitchWH = (r) => [-90, -270].includes(r);
+
+	function throttle(cb, delay = 100) {
+		let shouldWait = false;
+		let waitingArgs;
+		const timeoutFunc = () => {
+			if (waitingArgs == null) {
+				shouldWait = false;
+			} else {
+				cb(...waitingArgs);
+				waitingArgs = null;
+				setTimeout(timeoutFunc, delay);
+			}
+		};
+
+		return (...args) => {
+			if (shouldWait) {
+				waitingArgs = args;
+				return;
+			}
+
+			cb(...args);
+			shouldWait = true;
+			setTimeout(timeoutFunc, delay);
+		};
+	}
 
 	function handlerRotate(e) {
 		let rotate = attrs.value.rotate;
