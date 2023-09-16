@@ -43,7 +43,7 @@
 		if (!isSwitchWH) {
 			console.log(
 				'updateAttributes in ImageResizeComponent',
-				updateAttributes,
+				`${newW > maxW ? maxW : newW}px`,
 			);
 
 			tiptapProps.updateAttributes({

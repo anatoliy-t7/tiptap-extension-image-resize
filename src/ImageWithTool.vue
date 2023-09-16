@@ -81,7 +81,7 @@
 		const imgW = e.target.clientWidth;
 		let maxW = props.editor.view.dom.clientWidth;
 		if (imgW >= maxW) {
-			console.log('updateAttributes in ImageWithTool', updateAttributes);
+			console.log('updateAttributes in ImageWithTool', `${maxW}px`);
 			props.updateAttributes({ width: `${maxW}px` });
 		}
 	}
