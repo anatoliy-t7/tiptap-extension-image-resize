@@ -92,7 +92,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-##{$editorContainerId} {
+#{$editorContainerId} {
   .rotate-trigger {
     display: none;
     position: absolute;
