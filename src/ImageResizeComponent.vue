@@ -55,7 +55,7 @@ function removeEventListener() {
 </script>
 
 <style lang="scss">
-##{$editorContainerId} {
+#{$editorContainerId} {
   .resize-trigger {
     display: none;
     position: absolute;
