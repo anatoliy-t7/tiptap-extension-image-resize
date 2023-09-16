@@ -22,7 +22,7 @@
 	const aspectRatio = props.imgRef.naturalWidth / props.imgRef.naturalHeight;
 
 	const handlerResize = (e) => {
-		if (e.button !== 0) return; // 非鼠标左键
+		if (e.button !== 0) return;
 		removeEventListener();
 
 		const rect = e.target.getBoundingClientRect();
@@ -68,7 +68,7 @@
 		width: fit-content;
 
 		.resize-trigger {
-			display: none;
+			display: block;
 			position: absolute;
 			right: 0;
 			bottom: 0;
