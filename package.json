@@ -1,9 +1,9 @@
 {
-  "name": "tiptap-extension-image-freely",
+  "name": "tiptap-extension-image-resize",
   "author": "coolswitch",
-  "description": "Image extension for tiptap, support resize or rotation（tiptap的图片扩展，支持图片调整大小和旋转）",
+  "description": "Image extension for tiptap, support resize or rotation",
   "version": "0.1.2",
-  "homepage": "https://github.com/coolswitch/tiptap-extension-image-freely#readme",
+  "homepage": "https://github.com/anatoliydarma/tiptap-extension-image-resize#readme",
   "keywords": [
     "tiptap",
     "tiptap extension",
@@ -16,7 +16,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "main": "src/index.ts",
   "files": [
@@ -29,14 +29,14 @@
     }
   },
   "dependencies": {
-    "@tiptap/core": "^2.0.0-beta.193",
-    "@tiptap/vue-3": "^2.0.0-beta.195"
+    "@tiptap/core": "^2.1.10",
+    "@tiptap/vue-3": "^2.1.10"
   },
   "devDependencies": {
     "husky": "^7.0.4",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.6.4"
+    "typescript": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/coolswitch/tiptap-extension-image-freely/issues"
