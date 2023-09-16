@@ -26,20 +26,20 @@
 </script>
 
 <style lang="scss">
-	// #{$editorContainerId} {
-	//   .preview-trigger {
-	//     display: none;
-	//     position: absolute;
-	//     box-sizing: content-box;
-	//     right: 0;
-	//     top: 40px;
-	//     cursor: pointer;
-	//   }
-	//   .ProseMirror-selectednode {
-	//     z-index: 1;
-	//     .preview-trigger {
-	//       display: block;
-	//     }
-	//   }
-	// }
+	.image-resizer {
+		.preview-trigger {
+			display: none;
+			position: absolute;
+			box-sizing: content-box;
+			right: 0;
+			top: 40px;
+			cursor: pointer;
+		}
+		.ProseMirror-selectednode {
+			z-index: 1;
+			.preview-trigger {
+				display: block;
+			}
+		}
+	}
 </style>

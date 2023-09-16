@@ -62,28 +62,28 @@
 </script>
 
 <style lang="scss">
-	// #{$editorContainerId} {
-	//   .resize-trigger {
-	//     display: none;
-	//     position: absolute;
-	//     right: 0;
-	//     bottom: 0;
-	//     cursor: nwse-resize;
-	//   }
-	//   .resize-default-icon {
-	//     height: 8px;
-	//     width: 8px;
-	//     margin: 0 -4px -4px 0;
-	//     background: #41464b;
-	//     border: 2px solid #fff;
-	//     box-sizing: content-box;
-	//     box-shadow: 0px 1px 2px rgb(0 0 0 / 30%);
-	//   }
-	//   .ProseMirror-selectednode {
-	//     z-index: 1;
-	//     .resize-trigger {
-	//       display: block;
-	//     }
-	//   }
-	// }
+	.image-resizer {
+		.resize-trigger {
+			display: none;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			cursor: nwse-resize;
+		}
+		.resize-default-icon {
+			height: 8px;
+			width: 8px;
+			margin: 0 -4px -4px 0;
+			background: #41464b;
+			border: 2px solid #fff;
+			box-sizing: content-box;
+			box-shadow: 0px 1px 2px rgb(0 0 0 / 30%);
+		}
+		.ProseMirror-selectednode {
+			z-index: 1;
+			.resize-trigger {
+				display: block;
+			}
+		}
+	}
 </style>

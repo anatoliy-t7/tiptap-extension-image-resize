@@ -116,20 +116,20 @@
 </script>
 
 <style lang="scss">
-	// #{$editorContainerId} {
-	//   .rotate-trigger {
-	//     display: none;
-	//     position: absolute;
-	//     box-sizing: content-box;
-	//     right: 0;
-	//     top: 0;
-	//     cursor: pointer;
-	//   }
-	//   .ProseMirror-selectednode {
-	//     z-index: 1;
-	//     .rotate-trigger {
-	//       display: block;
-	//     }
-	//   }
-	// }
+	.image-resizer {
+		.rotate-trigger {
+			display: none;
+			position: absolute;
+			box-sizing: content-box;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+		}
+		.ProseMirror-selectednode {
+			z-index: 1;
+			.rotate-trigger {
+				display: block;
+			}
+		}
+	}
 </style>
