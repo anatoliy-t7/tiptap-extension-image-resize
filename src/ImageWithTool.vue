@@ -121,7 +121,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-##{$editorContainerId} {
+#{$editorContainerId} {
   .image-resizer {
     max-width: 100%;
     position: relative;
