@@ -6,11 +6,12 @@
 				props.selected && props.editor.isEditable,
 			'image-err': isImgErr,
 			'inline': options.inline,
-		}">
+		}"
+		:style="{ width: attrs.width }">
 		<img
 			ref="imgRef"
 			v-if="isEnableLazyload"
-			:data-src="attrs.src"
+			:src="attrs.src"
 			:alt="attrs.alt"
 			:title="attrs.title"
 			:class="{ maxw100: !isLoaded }"
@@ -81,7 +82,6 @@
 		const imgW = e.target.clientWidth;
 		let maxW = props.editor.view.dom.clientWidth;
 		if (imgW >= maxW) {
-			console.log('updateAttributes in ImageWithTool', `${maxW}px`);
 			props.updateAttributes({ width: `${maxW}px` });
 		}
 	}
