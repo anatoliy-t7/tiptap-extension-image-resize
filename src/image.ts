@@ -45,8 +45,8 @@ export const ImageWithTools = Node.create<ImageOptions>({
       resizeIcon: null,
       rotate: true,
       rotateIcon: null,
-      onExtraCreated: () => {},
-      onError: () => {}
+      onExtraCreated: () => { },
+      onError: () => { }
     }
   },
 

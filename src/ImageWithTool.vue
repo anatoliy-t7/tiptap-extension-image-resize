@@ -121,23 +121,23 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-#{$editorContainerId} {
-  .image-resizer {
-    max-width: 100%;
-    position: relative;
-    width: fit-content;
+// #{$editorContainerId} {
+//   .image-resizer {
+//     max-width: 100%;
+//     position: relative;
+//     width: fit-content;
 
-    &.inline {
-      display: inline-block;
-    }
+//     &.inline {
+//       display: inline-block;
+//     }
 
-    img {
-      transform-origin: left top;
-    }
+//     img {
+//       transform-origin: left top;
+//     }
 
-    .maxw100 {
-      width: 100%;
-    }
-  }
-}
+//     .maxw100 {
+//       width: 100%;
+//     }
+//   }
+// }
 </style>
