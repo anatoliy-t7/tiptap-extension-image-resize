@@ -26,7 +26,7 @@ function handlerPreview() {
 </script>
 
 <style lang="scss">
-##{$editorContainerId} {
+#{$editorContainerId} {
   .preview-trigger {
     display: none;
     position: absolute;
