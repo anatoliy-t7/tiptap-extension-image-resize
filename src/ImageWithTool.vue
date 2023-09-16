@@ -11,7 +11,7 @@
 		<img
 			ref="imgRef"
 			v-if="isEnableLazyload"
-			:src="attrs.src"
+			:data-src="attrs.src"
 			:alt="attrs.alt"
 			:title="attrs.title"
 			:class="{ maxw100: !isLoaded }"
