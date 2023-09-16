@@ -38,12 +38,10 @@
 			@load="handleImgLoad"
 			@error="handleImgError" />
 
-		<!-- 缩放 -->
 		<ImageResizeComponent
 			v-if="isLoaded && options.resize"
 			:imgRef="imgRef" />
 
-		<!-- 旋转 -->
 		<ImageRotateComponent
 			v-if="isLoaded && options.rotate"
 			:imgRef="imgRef" />
@@ -76,35 +74,25 @@
 		'-180': 'translate(-100%,-100%)',
 		'-270': 'translate(0,-100%)',
 	};
-	const isInTable = (ele) => {
-		if (ele.nodeName === 'TD') return true;
-		else if (ele.className.includes('ProseMirror')) return false;
-		else return ele.parentElement ? isInTable(ele.parentElement) : false;
-	};
 
 	const isLoaded = ref(false);
 	function handleImgLoad(e) {
 		isLoaded.value = true;
-		// 图片最大 100%
 		const imgW = e.target.clientWidth;
 		let maxW = props.editor.view.dom.clientWidth;
-		if (isInTable(e.target)) {
-			maxW = e.target.parentElement.parentElement.clientWidth;
-			if (maxW - imgW < 5)
-				return props.updateAttributes({ width: `100%` });
-		}
-		// 不在表格内，使用原逻辑
-		else if (imgW >= maxW) {
+	   if ( imgW >= maxW )
+	   {
+	    console.log('updateAttributes in ImageWithTool': updateAttributes);
 			props.updateAttributes({ width: `${maxW}px` });
 		}
 	}
 
-	// #region 暴露额外内容warp
+	// #region
 	const extRef = ref(null);
 	onMounted(() => options.value.onExtraCreated(extRef.value, imgRef.value));
 	// #endregion
 
-	// #region 处理加载失败的图片
+	// #region
 	const isImgErr = ref(false);
 	function handleImgError() {
 		isImgErr.value = true;
@@ -112,7 +100,7 @@
 	}
 	// #endregion
 
-	// #region 图片懒加载
+	// #region
 	const isEnableLazyload = !!IntersectionObserver;
 	onMounted(() => {
 		if (!isEnableLazyload) return;

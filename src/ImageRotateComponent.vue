@@ -124,7 +124,7 @@
 		width: fit-content;
 
 		.rotate-trigger {
-			display: none;
+			display: block;
 			position: absolute;
 			box-sizing: content-box;
 			right: 0;

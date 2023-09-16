@@ -40,7 +40,10 @@
 		const maxW = resizeRef.value.parentElement.parentElement.clientWidth;
 		const newW = originW.value - (originX.value - e.pageX);
 		const isSwitchWH = [-90, -270].includes(tiptapProps.node.attrs.rotate);
-		if (!isSwitchWH) {
+		if ( !isSwitchWH )
+		{
+			console.log( 'updateAttributes in ImageResizeComponent': updateAttributes );
+
 			tiptapProps.updateAttributes({
 				width: `${newW > maxW ? maxW : newW}px`,
 			});
@@ -58,7 +61,7 @@
 		document.body.removeEventListener('mouseleave', removeEventListener);
 	}
 
-	// watch(() => tiptapProps.selected, removeEventListener)
+	watch(() => tiptapProps.selected, removeEventListener);
 </script>
 
 <style lang="scss">
@@ -81,7 +84,6 @@
 			background: #41464b;
 			border: 2px solid #fff;
 			box-sizing: content-box;
-			box-shadow: 0px 1px 2px rgb(0 0 0 / 30%);
 		}
 		.ProseMirror-selectednode {
 			z-index: 1;
