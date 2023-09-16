@@ -40,9 +40,11 @@
 		const maxW = resizeRef.value.parentElement.parentElement.clientWidth;
 		const newW = originW.value - (originX.value - e.pageX);
 		const isSwitchWH = [-90, -270].includes(tiptapProps.node.attrs.rotate);
-		if ( !isSwitchWH )
-		{
-			console.log( 'updateAttributes in ImageResizeComponent': updateAttributes );
+		if (!isSwitchWH) {
+			console.log(
+				'updateAttributes in ImageResizeComponent',
+				updateAttributes,
+			);
 
 			tiptapProps.updateAttributes({
 				width: `${newW > maxW ? maxW : newW}px`,
