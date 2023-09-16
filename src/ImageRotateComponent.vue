@@ -117,6 +117,10 @@
 
 <style lang="scss">
 	.image-resizer {
+		max-width: 100%;
+		position: relative;
+		width: fit-content;
+
 		.rotate-trigger {
 			display: none;
 			position: absolute;

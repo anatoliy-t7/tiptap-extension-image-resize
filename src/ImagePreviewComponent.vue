@@ -27,6 +27,10 @@
 
 <style lang="scss">
 	.image-resizer {
+		max-width: 100%;
+		position: relative;
+		width: fit-content;
+
 		.preview-trigger {
 			display: none;
 			position: absolute;

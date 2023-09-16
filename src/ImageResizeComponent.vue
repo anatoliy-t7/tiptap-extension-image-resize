@@ -63,6 +63,10 @@
 
 <style lang="scss">
 	.image-resizer {
+		max-width: 100%;
+		position: relative;
+		width: fit-content;
+
 		.resize-trigger {
 			display: none;
 			position: absolute;

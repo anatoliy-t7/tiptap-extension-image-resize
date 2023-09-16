@@ -2,7 +2,7 @@
 	"name": "tiptap-extension-image-resize",
 	"author": "coolswitch",
 	"description": "Image extension for tiptap, support resize or rotation",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"homepage": "https://github.com/anatoliydarma/tiptap-extension-image-resize#readme",
 	"keywords": [
 		"tiptap",
